@@ -1,1 +1,722 @@
-1212
+--[[ Instances ]]--
+local Dreaming = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local topbar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local minimize = Instance.new("TextButton")
+local Title_2 = Instance.new("TextLabel")
+local pages = Instance.new("Frame")
+local ExeBtn = Instance.new("TextButton")
+local HubBtn = Instance.new("TextButton")
+local StatusBtn = Instance.new("TextButton")
+local selected = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local mover = Instance.new("Frame")
+local SCRIPT_HUB_PAGE = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local STATUS_PAGE = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local D3 = Instance.new("Frame")
+local TextLabel_2 = Instance.new("TextLabel")
+local Frame_5 = Instance.new("Frame")
+local D2 = Instance.new("Frame")
+local TextLabel_3 = Instance.new("TextLabel")
+local Frame_6 = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local D1 = Instance.new("Frame")
+local Frame_7 = Instance.new("ImageLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local EXECUTOR_PAGE = Instance.new("Frame")
+local R6 = Instance.new("TextButton")
+local Respawn = Instance.new("TextButton")
+--[[ Properties ]]--
+Dreaming.Name = "Dreaming"
+Dreaming.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Parent = Dreaming
+Frame.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+Frame.BorderSizePixel = 0
+Frame.ClipsDescendants = true
+Frame.Position = UDim2.new(0.494580746, -260, 0.538532853, -180)
+Frame.Size = UDim2.new(0, 535, 0, 287)
+
+topbar.Name = "topbar"
+topbar.Parent = Frame
+topbar.BackgroundColor3 = Color3.new(0.141176, 0.141176, 0.141176)
+topbar.BorderSizePixel = 0
+topbar.Size = UDim2.new(0, 535, 0, 21)
+
+Title.Name = "Title"
+Title.Parent = topbar
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.0149532137, 0, 0, 0)
+Title.Size = UDim2.new(0, 66, 0, 18)
+Title.Font = Enum.Font.Code
+Title.Text = "Luama HUB"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextSize = 14
+
+minimize.Name = "minimize"
+minimize.Parent = topbar
+minimize.BackgroundColor3 = Color3.new(1, 1, 1)
+minimize.BackgroundTransparency = 1
+minimize.Position = UDim2.new(0.964486003, 0, 0, 0)
+minimize.Size = UDim2.new(0, 19, 0, 18)
+minimize.AutoButtonColor = false
+minimize.Font = Enum.Font.SourceSans
+minimize.Text = "-"
+minimize.TextColor3 = Color3.new(1, 1, 1)
+minimize.TextSize = 14
+
+Title_2.Name = "Title"
+Title_2.Parent = topbar
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.Position = UDim2.new(0.841121435, 0, 0.0476190485, 0)
+Title_2.Size = UDim2.new(0, 66, 0, 18)
+Title_2.Font = Enum.Font.Code
+Title_2.Text = "V. 1.0"
+Title_2.TextColor3 = Color3.new(1, 1, 1)
+Title_2.TextSize = 14
+
+pages.Name = "pages"
+pages.Parent = Frame
+pages.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+pages.BorderSizePixel = 0
+pages.Position = UDim2.new(-0.00186915894, 0, 0.0711864382, 0)
+pages.Size = UDim2.new(0, 535, 0, 18)
+
+ExeBtn.Name = "ExeBtn"
+ExeBtn.Parent = pages
+ExeBtn.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+ExeBtn.BackgroundTransparency = 1
+ExeBtn.BorderSizePixel = 0
+ExeBtn.Position = UDim2.new(0.0168224294, 0, 0, 0)
+ExeBtn.Size = UDim2.new(0, 65, 0, 18)
+ExeBtn.ZIndex = 3
+ExeBtn.AutoButtonColor = false
+ExeBtn.Font = Enum.Font.SourceSansSemibold
+ExeBtn.Text = "MAIN"
+ExeBtn.TextColor3 = Color3.new(1, 1, 1)
+ExeBtn.TextSize = 14
+ExeBtn.TextWrapped = true
+
+HubBtn.Name = "HubBtn"
+HubBtn.Parent = pages
+HubBtn.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+HubBtn.BackgroundTransparency = 1
+HubBtn.BorderSizePixel = 0
+HubBtn.Position = UDim2.new(0.151401863, 0, 0, 0)
+HubBtn.Size = UDim2.new(0, 69, 0, 18)
+HubBtn.ZIndex = 3
+HubBtn.AutoButtonColor = false
+HubBtn.Font = Enum.Font.SourceSansSemibold
+HubBtn.Text = "TPS"
+HubBtn.TextColor3 = Color3.new(1, 1, 1)
+HubBtn.TextSize = 14
+
+StatusBtn.Name = "StatusBtn"
+StatusBtn.Parent = pages
+StatusBtn.BackgroundColor3 = Color3.new(0.14902, 0.14902, 0.14902)
+StatusBtn.BackgroundTransparency = 1
+StatusBtn.BorderSizePixel = 0
+StatusBtn.Position = UDim2.new(0.291588753, 0, 0, 0)
+StatusBtn.Size = UDim2.new(0, 69, 0, 18)
+StatusBtn.ZIndex = 3
+StatusBtn.AutoButtonColor = false
+StatusBtn.Font = Enum.Font.SourceSansSemibold
+StatusBtn.Text = "STATUS"
+StatusBtn.TextColor3 = Color3.new(1, 1, 1)
+StatusBtn.TextSize = 14
+
+selected.Name = "selected"
+selected.Parent = pages
+selected.BackgroundColor3 = Color3.new(0.188235, 0.188235, 0.188235)
+selected.BorderSizePixel = 0
+selected.Position = UDim2.new(0.0170000009, 0, 0, 0)
+selected.Size = UDim2.new(0, 65, 0, 18)
+
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.new(1, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0, 0, 0.062717773, 0)
+Frame_2.Size = UDim2.new(0, 535, 0, 2)
+
+mover.Name = "mover"
+mover.Parent = Frame
+mover.BackgroundColor3 = Color3.new(1, 1, 1)
+mover.BackgroundTransparency = 1
+mover.Position = UDim2.new(0, 535, 0, 0)
+mover.Size = UDim2.new(1, 0, 1, 0)
+
+SCRIPT_HUB_PAGE.Name = "SCRIPT_HUB_PAGE"
+SCRIPT_HUB_PAGE.Parent = mover
+SCRIPT_HUB_PAGE.BackgroundColor3 = Color3.new(1, 1, 1)
+SCRIPT_HUB_PAGE.BackgroundTransparency = 1
+SCRIPT_HUB_PAGE.BorderSizePixel = 0
+SCRIPT_HUB_PAGE.Position = UDim2.new(0, 0, 0.0729999617, 0)
+SCRIPT_HUB_PAGE.Size = UDim2.new(0, 457, 0, 266)
+
+ScrollingFrame.Parent = SCRIPT_HUB_PAGE
+ScrollingFrame.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0149532715, 0, 0.184210524, 0)
+ScrollingFrame.Size = UDim2.new(0, 519, 0, 209)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 20, 0)
+ScrollingFrame.ScrollBarThickness = 5
+
+TextBox.Parent = SCRIPT_HUB_PAGE
+TextBox.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0149999997, 0, 0.0939999968, 0)
+TextBox.Size = UDim2.new(0, 519, 0, 17)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Search"
+TextBox.Text = "TPS MAY VERY DEPENDING ON THE GAME"
+TextBox.TextColor3 = Color3.new(1, 1, 1)
+TextBox.TextSize = 14
+
+STATUS_PAGE.Name = "STATUS_PAGE"
+STATUS_PAGE.Parent = mover
+STATUS_PAGE.BackgroundColor3 = Color3.new(1, 1, 1)
+STATUS_PAGE.BackgroundTransparency = 1
+STATUS_PAGE.Position = UDim2.new(0, 535, 0.0729999989, 0)
+STATUS_PAGE.Size = UDim2.new(0, 535, 0, 266)
+
+Frame_3.Parent = STATUS_PAGE
+Frame_3.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0149532715, 0, 0.0902255625, 0)
+Frame_3.Size = UDim2.new(0, 518, 0, 235)
+
+TextLabel.Parent = STATUS_PAGE
+TextLabel.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0149532715, 0, 0.0902255625, 0)
+TextLabel.Size = UDim2.new(0, 518, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Status List"
+TextLabel.TextColor3 = Color3.new(1, 1, 1)
+TextLabel.TextSize = 18
+TextLabel.TextWrapped = true
+
+Frame_4.Parent = STATUS_PAGE
+Frame_4.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_4.BorderSizePixel = 0
+Frame_4.Position = UDim2.new(0.0373831764, 0, 0.770676672, 0)
+Frame_4.Size = UDim2.new(0, 493, 0, 25)
+
+D3.Name = "D3"
+D3.Parent = STATUS_PAGE
+D3.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
+D3.BorderSizePixel = 0
+D3.Position = UDim2.new(0.0373831764, 0, 0.770676672, 0)
+D3.Size = UDim2.new(0, 3, 0, 25)
+
+TextLabel_2.Parent = STATUS_PAGE
+TextLabel_2.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.0429906547, 0, 0.699248075, 0)
+TextLabel_2.Size = UDim2.new(0, 114, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Updates"
+TextLabel_2.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_2.TextSize = 20
+TextLabel_2.TextWrapped = true
+
+Frame_5.Parent = STATUS_PAGE
+Frame_5.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_5.BorderSizePixel = 0
+Frame_5.Position = UDim2.new(0.0373831764, 0, 0.605263174, 0)
+Frame_5.Size = UDim2.new(0, 493, 0, 25)
+
+D2.Name = "D2"
+D2.Parent = STATUS_PAGE
+D2.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
+D2.BorderSizePixel = 0
+D2.Position = UDim2.new(0.0373831801, 0, 0.605263114, 0)
+D2.Size = UDim2.new(0, 277, 0, 25)
+
+TextLabel_3.Parent = STATUS_PAGE
+TextLabel_3.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel_3.BackgroundTransparency = 1
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.0373831801, 0, 0.533834517, 0)
+TextLabel_3.Size = UDim2.new(0, 114, 0, 19)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "V2 Development"
+TextLabel_3.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_3.TextSize = 20
+TextLabel_3.TextWrapped = true
+
+Frame_6.Parent = STATUS_PAGE
+Frame_6.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.0373831764, 0, 0.43609035, 0)
+Frame_6.Size = UDim2.new(0, 493, 0, 25)
+
+TextLabel_4.Parent = STATUS_PAGE
+TextLabel_4.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel_4.BackgroundTransparency = 1
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.0373831801, 0, 0.364661664, 0)
+TextLabel_4.Size = UDim2.new(0, 101, 0, 19)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Discord Status"
+TextLabel_4.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_4.TextSize = 20
+TextLabel_4.TextWrapped = true
+
+D1.Name = "D1"
+D1.Parent = STATUS_PAGE
+D1.BackgroundColor3 = Color3.new(0.333333, 1, 0.498039)
+D1.BorderSizePixel = 0
+D1.Position = UDim2.new(0.0373831764, 0, 0.436090231, 0)
+D1.Size = UDim2.new(0, 493, 0, 25)
+
+Frame_7.Name = "Frame"
+Frame_7.Parent = STATUS_PAGE
+Frame_7.BackgroundColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Frame_7.BackgroundTransparency = 1
+Frame_7.BorderSizePixel = 0
+Frame_7.Position = UDim2.new(0.0373831801, 0, 0.270676702, 0)
+Frame_7.Size = UDim2.new(0, 187, 0, 25)
+Frame_7.Image = "rbxassetid://3570695787"
+Frame_7.ImageColor3 = Color3.new(0.0980392, 0.0980392, 0.0980392)
+Frame_7.ScaleType = Enum.ScaleType.Slice
+Frame_7.SliceCenter = Rect.new(100, 100, 100, 100)
+
+TextLabel_5.Parent = STATUS_PAGE
+TextLabel_5.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel_5.BackgroundTransparency = 1
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0373831764, 0, 0.19924812, 0)
+TextLabel_5.Size = UDim2.new(0, 141, 0, 19)
+TextLabel_5.Font = Enum.Font.SourceSans
+TextLabel_5.Text = "Discord Invite Below"
+TextLabel_5.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_5.TextSize = 20
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = STATUS_PAGE
+TextLabel_6.BackgroundColor3 = Color3.new(0.137255, 0.137255, 0.137255)
+TextLabel_6.BackgroundTransparency = 1
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0.041121494, 0, 0.270676702, 0)
+TextLabel_6.Size = UDim2.new(0, 185, 0, 25)
+TextLabel_6.Font = Enum.Font.ArialBold
+TextLabel_6.Text = "https://discord.gg/N3RrRKyQUm"
+TextLabel_6.TextColor3 = Color3.new(1, 1, 1)
+TextLabel_6.TextSize = 14
+TextLabel_6.TextWrapped = true
+
+EXECUTOR_PAGE.Name = "EXECUTOR_PAGE"
+EXECUTOR_PAGE.Parent = mover
+EXECUTOR_PAGE.BackgroundColor3 = Color3.new(1, 1, 1)
+EXECUTOR_PAGE.BackgroundTransparency = 1
+EXECUTOR_PAGE.Position = UDim2.new(0, -535, 0.0710000023, 0)
+EXECUTOR_PAGE.Size = UDim2.new(0, 535, 0, 274)
+
+R6.Name = "R6"
+R6.Parent = EXECUTOR_PAGE
+R6.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+R6.BorderSizePixel = 0
+R6.Position = UDim2.new(0.926775575, 0, 0.8580513, 0)
+R6.Size = UDim2.new(0, 30, 0, 26)
+R6.AutoButtonColor = false
+R6.Font = Enum.Font.SourceSansSemibold
+R6.Text = "R6"
+R6.TextColor3 = Color3.new(1, 1, 1)
+R6.TextSize = 17
+
+Respawn.Name = "Respawn"
+Respawn.Parent = EXECUTOR_PAGE
+Respawn.BackgroundColor3 = Color3.new(0.156863, 0.156863, 0.156863)
+Respawn.BorderSizePixel = 0
+Respawn.Position = UDim2.new(0.863224149, 0, 0.858051062, 0)
+Respawn.Size = UDim2.new(0, 31, 0, 26)
+Respawn.AutoButtonColor = false
+Respawn.Font = Enum.Font.SourceSansSemibold
+Respawn.Text = "RE"
+Respawn.TextColor3 = Color3.new(1, 1, 1)
+Respawn.TextSize = 17
+-- Scripts:
+function SCRIPT_UDQO86_FAKESCRIPT() -- Frame.SmoothDrag 
+	getfenv().script = Instance.new('LocalScript', Frame)
+
+	local Drag = script.Parent.Parent.Frame
+	gsCoreGui = game:GetService("CoreGui")
+	gsTween = game:GetService("TweenService")
+	local UserInputService = game:GetService("UserInputService")
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local dragTime = 0.04
+			local SmoothDrag = {}
+			SmoothDrag.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			local dragSmoothFunction = gsTween:Create(Drag, TweenInfo.new(dragTime, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut), SmoothDrag)
+			dragSmoothFunction:Play()
+		end
+		Drag.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = Drag.Position
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		Drag.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging and Drag.Size then
+				update(input)
+			end
+		end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_UDQO86_FAKESCRIPT))
+function SCRIPT_GZVH82_FAKESCRIPT() -- SCRIPT_HUB_PAGE.LocalScript 
+	getfenv().script = Instance.new('LocalScript', SCRIPT_HUB_PAGE)
+
+	local Search = script.Parent.TextBox
+	local Scroll = script.Parent.ScrollingFrame
+	local pos = 0
+	for i, v in ipairs(Scroll:GetChildren()) do
+	v:TweenPosition(UDim2.new(0.031, 0,v.Position.Y.Scale, v.Position.Y.Offset)) 
+	v:TweenPosition(UDim2.new(0.031, 0,v.Position.Y.Scale, v.Position.Y.Offset))
+	    pos = pos + 110
+	end
+	for REKTNO, yescomeon in ipairs (Scroll:GetChildren()) do
+	    print(yescomeon)
+	end
+	Search:GetPropertyChangedSignal("Text"):Connect(function()
+	    for i, v in pairs(Scroll:GetChildren()) do
+	        if v:IsA("GuiObject") then
+	            v.Visible = false
+	        end
+	    end
+	    pos = 0
+	    for i, v in pairs(Scroll:GetChildren()) do
+	        if v.Name:lower():match(Search.Text:lower()) then
+	            
+	            v.Visible = true
+	        v.Position = UDim2.new(-1.001, 0, 0, pos)
+	        if game.ContentProvider.RequestQueueSize > 5 then
+	            repeat
+	                print("\nWaiting for queue to cool down\n")
+	            until game.ContentProvider.RequestQueueSize <= 5
+	            v:TweenPosition(UDim2.new(0.031, 0,v.Position.Y.Scale, v.Position.Y.Offset), "Out", "Quart", .5)
+	        else
+	            v:TweenPosition(UDim2.new(0.031, 0,v.Position.Y.Scale, v.Position.Y.Offset), "Out", "Quart", .5)
+	        end
+	            
+	        pos = pos + 140
+	        end
+	    end
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_GZVH82_FAKESCRIPT))
+function SCRIPT_VAHH69_FAKESCRIPT() -- TextLabel_6.LocalScript 
+	getfenv().script = Instance.new('LocalScript', TextLabel_6)
+
+	_G.CopiedText = ""
+	
+	button.MouseButton1Click:Connect(function()
+		_G.CopiedText = TextLabel.Text
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VAHH69_FAKESCRIPT))
+function SCRIPT_IPIE82_FAKESCRIPT() -- R6.Server 
+	getfenv().script = Instance.new('Script', R6)
+
+	script.Parent.RemoteEvent.OnServerEvent:Connect(function(plr)
+		require(3041175937):r6(plr.Name)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_IPIE82_FAKESCRIPT))
+function SCRIPT_YINR85_FAKESCRIPT() -- R6.Cilent 
+	getfenv().script = Instance.new('LocalScript', R6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.RemoteEvent:FireServer()
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_YINR85_FAKESCRIPT))
+function SCRIPT_VNVU89_FAKESCRIPT() -- R6.CircleClickExample 
+	getfenv().script = Instance.new('LocalScript', R6)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	
+	local function CircleClick(Button, X, Y)
+			
+			Button.ClipsDescendants = true
+			
+			local Circle = script:WaitForChild("Circle"):Clone()
+				Circle.Parent = Button
+				local NewX = X - Circle.AbsolutePosition.X
+				local NewY = Y - Circle.AbsolutePosition.Y
+				Circle.Position = UDim2.new(0, NewX, 0, NewY)
+			
+			local Size = 0
+				if Button.AbsoluteSize.X > Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.X*1.5
+				elseif Button.AbsoluteSize.X < Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.Y*1.5
+				elseif Button.AbsoluteSize.X == Button.AbsoluteSize.Y then																																																																														print("This place uses a model by Come0n.") --please do not remove!
+					Size = Button.AbsoluteSize.X*1.5
+				end
+			
+			local Time = 0.5
+				Circle:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(0.5, -Size/2, 0.5, -Size/2), "Out", "Quad", Time, false, nil)
+				for i=1,10 do
+					Circle.ImageTransparency = Circle.ImageTransparency + 0.01
+					wait(Time/10)
+				end
+				Circle:Destroy()
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(function()
+		CircleClick(script.Parent, Mouse.X, Mouse.Y) 
+	end)
+	
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VNVU89_FAKESCRIPT))
+function SCRIPT_EVZU75_FAKESCRIPT() -- R6.CircleClickExample 
+	getfenv().script = Instance.new('LocalScript', R6)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	
+	local function CircleClick(Button, X, Y)
+			
+			Button.ClipsDescendants = true
+			
+			local Circle = script:WaitForChild("Circle"):Clone()
+				Circle.Parent = Button
+				local NewX = X - Circle.AbsolutePosition.X
+				local NewY = Y - Circle.AbsolutePosition.Y
+				Circle.Position = UDim2.new(0, NewX, 0, NewY)
+			
+			local Size = 0
+				if Button.AbsoluteSize.X > Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.X*1.5
+				elseif Button.AbsoluteSize.X < Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.Y*1.5
+				elseif Button.AbsoluteSize.X == Button.AbsoluteSize.Y then																																																																														print("This place uses a model by Come0n.") --please do not remove!
+					Size = Button.AbsoluteSize.X*1.5
+				end
+			
+			local Time = 0.5
+				Circle:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(0.5, -Size/2, 0.5, -Size/2), "Out", "Quad", Time, false, nil)
+				for i=1,10 do
+					Circle.ImageTransparency = Circle.ImageTransparency + 0.01
+					wait(Time/10)
+				end
+				Circle:Destroy()
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(function()
+		CircleClick(script.Parent, Mouse.X, Mouse.Y) 
+	end)
+	
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_EVZU75_FAKESCRIPT))
+function SCRIPT_FSET81_FAKESCRIPT() -- R6.LocalScript 
+	getfenv().script = Instance.new('LocalScript', R6)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent:WaitForChild("RemoteEvent"):FireServer("r6")
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FSET81_FAKESCRIPT))
+function SCRIPT_IMCL89_FAKESCRIPT() -- Respawn.ServerEvents 
+	getfenv().script = Instance.new('Script', Respawn)
+
+	script.Respawn.OnServerEvent:connect(function(plr)
+		plr:LoadCharacter()
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_IMCL89_FAKESCRIPT))
+function SCRIPT_XBZT85_FAKESCRIPT() -- Respawn.CircleClickExample 
+	getfenv().script = Instance.new('LocalScript', Respawn)
+
+	local Mouse = game.Players.LocalPlayer:GetMouse()
+	
+	local function CircleClick(Button, X, Y)
+			
+			Button.ClipsDescendants = true
+			
+			local Circle = script:WaitForChild("Circle"):Clone()
+				Circle.Parent = Button
+				local NewX = X - Circle.AbsolutePosition.X
+				local NewY = Y - Circle.AbsolutePosition.Y
+				Circle.Position = UDim2.new(0, NewX, 0, NewY)
+			
+			local Size = 0
+				if Button.AbsoluteSize.X > Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.X*1.5
+				elseif Button.AbsoluteSize.X < Button.AbsoluteSize.Y then
+					 Size = Button.AbsoluteSize.Y*1.5
+				elseif Button.AbsoluteSize.X == Button.AbsoluteSize.Y then																																																																														print("This place uses a model by Come0n.") --please do not remove!
+					Size = Button.AbsoluteSize.X*1.5
+				end
+			
+			local Time = 0.5
+				Circle:TweenSizeAndPosition(UDim2.new(0, Size, 0, Size), UDim2.new(0.5, -Size/2, 0.5, -Size/2), "Out", "Quad", Time, false, nil)
+				for i=1,10 do
+					Circle.ImageTransparency = Circle.ImageTransparency + 0.01
+					wait(Time/10)
+				end
+				Circle:Destroy()
+	end
+	
+	
+	script.Parent.MouseButton1Down:connect(function()
+		CircleClick(script.Parent, Mouse.X, Mouse.Y) 
+	end)
+	
+	
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_XBZT85_FAKESCRIPT))
+function SCRIPT_OILL72_FAKESCRIPT() -- Respawn.LocalScript 
+	getfenv().script = Instance.new('LocalScript', Respawn)
+
+	script.Parent.MouseButton1Click:Connect(function()
+				script.Parent.ServerEvents.Respawn:FireServer()
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_OILL72_FAKESCRIPT))
+function SCRIPT_RTGH77_FAKESCRIPT() -- EXECUTOR_PAGE.LocalScript 
+	getfenv().script = Instance.new('LocalScript', EXECUTOR_PAGE)
+
+	script.Parent.Execute.MouseButton1Click:Connect(function()
+		script.Parent.RemoteEvent:FireServer(script.Parent.ScriptBox.TextBox.Text)
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_RTGH77_FAKESCRIPT))
+function SCRIPT_FMQU83_FAKESCRIPT() -- EXECUTOR_PAGE.RemoteHandle 
+	getfenv().script = Instance.new('Script', EXECUTOR_PAGE)
+
+	script.Parent.RemoteEvent.OnServerEvent:Connect(function(FlameV1,FlameV3)
+		loadstring=require(script.Loadstring)
+		loadstring(FlameV3)()
+	end)			
+
+end
+coroutine.resume(coroutine.create(SCRIPT_FMQU83_FAKESCRIPT))
+function SCRIPT_WPKG79_FAKESCRIPT() -- EXECUTOR_PAGE.LocalScript 
+	getfenv().script = Instance.new('LocalScript', EXECUTOR_PAGE)
+
+	script.Parent.Clear.MouseButton1Click:Connect(function()
+		script.Parent.ScriptBox.TextBox.Text = ""
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_WPKG79_FAKESCRIPT))
+function SCRIPT_ZYVW77_FAKESCRIPT() -- EXECUTOR_PAGE.LocalScript 
+	getfenv().script = Instance.new('LocalScript', EXECUTOR_PAGE)
+
+	local hidden = false
+	script.Parent["Hide-Text"].MouseButton1Click:Connect(function()
+	if hidden == false then
+		script.Parent.ScriptBox.TextBox.TextTransparency = 1
+		hidden = true
+	else
+		hidden = false
+		script.Parent.ScriptBox.TextBox.TextTransparency = 0
+	end	
+	end)
+
+end
+coroutine.resume(coroutine.create(SCRIPT_ZYVW77_FAKESCRIPT))
+function SCRIPT_KGVT65_FAKESCRIPT() -- Frame.tab_script 
+	getfenv().script = Instance.new('LocalScript', Frame)
+
+	local mover = script.Parent.mover
+	local Pages = script.Parent.pages
+	local selected = Pages.selected
+	local exebtn = Pages.ExeBtn
+	local hubbtn = Pages.HubBtn
+	local statusbtn = Pages.StatusBtn
+	local d1 = script.Parent.mover.STATUS_PAGE.D1
+	local d2 = script.Parent.mover.STATUS_PAGE.D2
+	local d3 = script.Parent.mover.STATUS_PAGE.D3
+	--d1 0, 493, 0, 25
+	--d2 0, 277, 0, 25
+	--d3 0, 3, 0, 25
+	
+	exebtn.MouseButton1Click:connect(function()
+		selected:TweenPosition(exebtn.Position, "InOut","Quint",0.6,true)
+		selected:TweenSize(exebtn.Size, "InOut","Quint",0.6,true,nil)
+		mover:TweenPosition(UDim2.new(0, 535, 0, 0), "InOut","Quint",0.6,true)
+	end)
+	hubbtn.MouseButton1Click:connect(function()
+		selected:TweenPosition(hubbtn.Position, "InOut","Quint",0.6,true,nil)
+		selected:TweenSize(hubbtn.Size, "InOut","Quint",0.6,true,nil)
+		mover:TweenPosition(UDim2.new(0, 0, 0, 0), "InOut","Quint",0.6,true)
+	end)
+	statusbtn.MouseButton1Click:connect(function()
+		selected:TweenPosition(statusbtn.Position, "InOut","Quint",0.6,true)
+		selected:TweenSize(statusbtn.Size, "InOut","Quint",0.6,true,nil)
+		mover:TweenPosition(UDim2.new(0, -535, 0, 0), "InOut","Quint",0.6,true)
+		d1.Size = UDim2.new(0, 0, 0, 25)
+		d2.Size = UDim2.new(0, 0, 0, 25)
+		d3.Size = UDim2.new(0, 0, 0, 25)
+			wait(0.5)
+			d1:TweenSize(UDim2.new(0, 493, 0, 25),'InOut','Quint',2.5,true)
+			d2:TweenSize(UDim2.new(0, 277, 0, 25),'InOut','Quint',2.5,true)
+			d3:TweenSize(UDim2.new(0, 3, 0, 25),'InOut','Quint',2.5,true)
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_KGVT65_FAKESCRIPT))
+function SCRIPT_VDOD90_FAKESCRIPT() -- Frame.LocalScript 
+	getfenv().script = Instance.new('LocalScript', Frame)
+
+	local minimize = script.Parent.topbar.minimize
+	minimize.MouseButton1Click:Connect(function()
+	    script.Parent:TweenPosition(UDim2.new(script.Parent.Position.X.Scale + 0, script.Parent.Position.X.Offset + 0, script.Parent.Position.Y.Scale + 0, script.Parent.Position.Y.Offset - -800),'InOut','Sine',1,true)
+	wait(0.45)
+	    --script.Parent:TweenPosition(UDim2.new(0.5, -260,0.6, 400),'InOut','Sine',0.8,true)
+	end)
+	
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VDOD90_FAKESCRIPT))
